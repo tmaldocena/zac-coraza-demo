@@ -38,7 +38,7 @@ function AppShell() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="bg-brand-white font-sans antialiased" style={{ fontFamily: "'system-ui','-apple-system','Segoe UI',sans-serif" }}>
+    <div className="font-sans antialiased" style={{ fontFamily: "'system-ui','-apple-system','Segoe UI',sans-serif" }}>
       <ScrollToTop />
       <Navbar menuOpen={menuOpen} onToggle={() => setMenuOpen(p => !p)} />
       <MobileMenu open={menuOpen} onClose={() => setMenuOpen(false)} />

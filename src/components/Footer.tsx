@@ -41,6 +41,24 @@ export default function Footer() {
             })}
           </div>
         </div>
+
+        <hr className="border-gray-800 my-6" />
+
+        <a
+          href="https://maguitostudio.com.ar"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-3 group"
+        >
+          <span className="text-[11px] text-gray-600 group-hover:text-gray-400 transition-colors duration-300">
+            Hecho con magia por
+          </span>
+          <img
+            src="/maguito-signature.svg"
+            alt="Maguito Studio"
+            className="h-5 opacity-40 group-hover:opacity-70 transition-opacity duration-300"
+          />
+        </a>
       </div>
     </footer>
   )

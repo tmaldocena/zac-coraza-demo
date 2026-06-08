@@ -16,8 +16,8 @@ export default function Navbar({ menuOpen, onToggle }: { menuOpen: boolean; onTo
   const { pathname } = useLocation()
 
   return (
-    <div className="relative z-20 w-full max-w-[1440px] mx-auto p-2 sm:p-3">
-      <div className="bg-brand-white/90 backdrop-blur-xl rounded-full px-[5px] py-[5px] flex items-center justify-between shadow-[0_2px_24px_rgba(0,0,0,0.12)] border border-brand-primary/10">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center p-2 sm:p-3">
+      <div className="w-full max-w-[1440px] bg-brand-white/80 backdrop-blur-xl rounded-full px-[5px] py-[5px] flex items-center justify-between shadow-[0_2px_24px_rgba(0,0,0,0.12)] border border-brand-white/20">
 
         <div className="flex items-center gap-5">
           <Link to="/" className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden flex-shrink-0 border border-brand-primary/10">
@@ -30,9 +30,8 @@ export default function Navbar({ menuOpen, onToggle }: { menuOpen: boolean; onTo
                 <Link
                   key={l.label}
                   to={l.to}
-                  className={`text-[14px] transition-colors duration-300 ${
-                    active ? 'text-brand-primary font-semibold' : 'text-brand-black hover:text-gray-500'
-                  }`}
+                  className={`text-[14px] transition-colors duration-300 ${active ? 'text-brand-primary font-semibold' : 'text-brand-black hover:text-gray-500'
+                    }`}
                 >
                   {l.label}
                 </Link>
@@ -50,16 +49,18 @@ export default function Navbar({ menuOpen, onToggle }: { menuOpen: boolean; onTo
             <span className="text-[13px] text-gray-600">{clock} en San Luis</span>
           </div>
 
-          <TextRollButton dark>
-            Alquilá tu local
-          </TextRollButton>
+          <Link to="/contacto">
+            <TextRollButton dark>
+              Alquilá tu local
+            </TextRollButton>
+          </Link>
 
-          <button
+          <Link to={"/contacto"}
             onClick={onToggle}
             className="md:hidden w-9 h-9 sm:w-10 sm:h-10 bg-brand-black rounded-full text-brand-white flex items-center justify-center"
           >
             {menuOpen ? <X size={16} /> : <Menu size={16} />}
-          </button>
+          </Link>
         </div>
       </div>
     </div>
