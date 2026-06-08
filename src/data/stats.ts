@@ -1,0 +1,19 @@
+export interface Stat {
+  value: string
+  label: string
+  sub: string
+}
+
+export const heroStats: { value: string; label: string }[] = [
+  { value: '8 Ha', label: 'Superficie planificada' },
+  { value: '+50', label: 'Locales proyectados' },
+  { value: '+100', label: 'Empleos directos' },
+  { value: 'Oct 23', label: 'Apertura del polo' },
+]
+
+export const detailStats: Stat[] = [
+  { value: '8 Ha', label: 'Superficie planificada', sub: 'Zona sur, Ruta 3' },
+  { value: '+50', label: 'Locales proyectados', sub: 'Plan maestro 2026' },
+  { value: '+100', label: 'Empleos generados', sub: 'Desde la apertura' },
+  { value: '50%', label: 'Energía solar', sub: 'Nuevas construcciones' },
+]

@@ -1,0 +1,61 @@
+export interface Service {
+  icon: string
+  title: string
+  desc: string
+  details: string
+  img: string
+  highlights: string[]
+}
+
+const services: Service[] = [
+  {
+    icon: '🚛',
+    title: 'Logística Industrial',
+    desc: 'Acceso para camiones, zonas de carga y descarga estratégicas. Naves modernas y depósitos para grandes volúmenes.',
+    details: 'La ZAC cuenta con accesos diseñados para tránsito pesado, muelles de carga con capacidad simultánea para 6 camiones y un depósito central de 1.200 m² con estanterías industriales. La ubicación estratégica sobre Ruta Provincial 3 permite una conexión rápida con la Autopista de las Serranías Puntanas y el centro de San Luis.',
+    img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80',
+    highlights: ['6 muelles de carga simultáneos', 'Depósito central de 1.200 m²', 'Acceso directo Ruta Provincial 3', 'Estacionamiento para camiones'],
+  },
+  {
+    icon: '💻',
+    title: 'Coworking Profesional',
+    desc: 'Espacios de trabajo equipados y WiFi en todo el predio. Infraestructura para arquitectos, ingenieros y comerciantes.',
+    details: 'Espacios modulares totalmente equipados con WiFi de alta velocidad, salas de reuniones con videoconferencia, impresión centralizada y recepción compartida. Ideal para profesionales de la construcción, ingenieros y comerciantes que necesitan una base operativa en el corazón de la ZAC.',
+    img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80',
+    highlights: ['WiFi de alta velocidad', 'Salas de reuniones equipadas', 'Impresión centralizada', 'Membresías flexibles'],
+  },
+  {
+    icon: '🎓',
+    title: 'Auditorio y Capacitación',
+    desc: 'Eventos y cursos en alianza con el Hubbard College of Administration. Formación continua en el rubro.',
+    details: 'Un auditorio con capacidad para 120 personas equipado con sistema de sonido profesional, proyector 4K y traducción simultánea. En alianza con el Hubbard College of Administration, se dictan cursos trimestrales de gestión comercial, logística y atención al cliente, abiertos a locatarios y al público general.',
+    img: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80',
+    highlights: ['Capacidad para 120 personas', 'Sistema de sonido profesional', 'Cursos trimestrales abiertos', 'Alianza con Hubbard College'],
+  },
+  {
+    icon: '🌿',
+    title: 'Espacios Verdes',
+    desc: 'Parques ecológicos, áreas infantiles, puntos verdes y senderos saludables para toda la familia.',
+    details: 'Más de 1.5 hectáreas destinadas a espacios verdes con árboles nativos, un parque infantil con juegos inclusivos, una plaza seca con bancos y mesas, y un sendero aeróbico de 800 metros que rodea todo el predio. Puntos de reciclaje distribuidos estratégicamente en cada sector.',
+    img: 'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=900&q=80',
+    highlights: ['1.5 Ha de espacios verdes', 'Parque infantil inclusivo', 'Sendero aeróbico de 800 m', 'Puntos de reciclaje'],
+  },
+  {
+    icon: '☀️',
+    title: 'Sustentabilidad',
+    desc: 'Paneles solares en nuevas construcciones que cubren hasta el 50% del consumo energético del predio.',
+    details: 'Todas las nuevas construcciones de la ZAC incorporan paneles fotovoltaicos, sistemas de recolección de agua de lluvia e iluminación LED con sensores de presencia. El objetivo es que el polo completo alcance una reducción del 50% en su consumo energético proveniente de la red para 2027.',
+    img: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=900&q=80',
+    highlights: ['Paneles fotovoltaicos', 'Recolección de agua de lluvia', 'Iluminación LED inteligente', 'Meta: 50% energía renovable'],
+  },
+  {
+    icon: '🏪',
+    title: 'Patio de Sabores',
+    desc: 'Gastronomía completa inaugurada en enero 2026: café, restaurante, pizzería y confitería dentro del polo.',
+    details: 'Un patio gastronómico con 4 propuestas: Café Puntano (especialidades en café de especialidad), Lo de Filippo (cocina tradicional argentina), Club de la Pizza (estilo napolitano con horno a leña) y Charlie\'s Candy (confitería artesanal). Cuenta con terraza descubierta, WiFi gratuito y acceso directo desde el estacionamiento.',
+    img: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80',
+    highlights: ['4 propuestas gastronómicas', 'Terraza descubierta', 'Café de especialidad', 'Horno a leña napolitano'],
+  },
+]
+
+export default services
